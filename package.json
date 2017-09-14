@@ -1,0 +1,11 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "this is my first project",
+  "main": "asyncServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
