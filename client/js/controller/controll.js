@@ -24,7 +24,9 @@
         };
     }]);  
 
-    app.config(function($stateProvider) {
+    app.config(function($stateProvider,$urlRouterProvider,$locationProvider) {
+        $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix('');
       var helloState = {
         name: 'home',
         url: '/home',
@@ -36,9 +38,8 @@
         url: '/about',
         templateUrl: '../views/about.html'
       }
-
+      $urlRouterProvider.otherwise('/home')
       $stateProvider.state(helloState);
       $stateProvider.state(aboutState);
-    });      
-
+    });
     

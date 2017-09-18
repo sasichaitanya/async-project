@@ -13,4 +13,6 @@ app.use(express.static('client', {index: 'views/index.html'}));
 
 app.use('/async',router); 
 
-app.listen(4040);
+app.listen(4040,function(){
+	console.log("connected to server");
+});
