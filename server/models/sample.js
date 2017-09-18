@@ -2,7 +2,9 @@ var mongoose = require ('mongoose');
 
 var schema = mongoose.Schema;
 
-var db = mongoose.connect('mongodb://localhost:27017/test');
+var config=require('../config/config.js')
+
+var db = mongoose.connect(config.mongo.url);
 
 var StudentSchema = new schema({
 		name:String,
