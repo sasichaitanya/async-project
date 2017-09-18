@@ -27,16 +27,18 @@
     app.config(function($stateProvider) {
       var helloState = {
         name: 'home',
-        url: '../views/home.html',
-        template: '<h3>hello world!</h3>'
+        url: '/home',
+        templateUrl: '../views/home.html'
       }
 
       var aboutState = {
         name: 'about',
-        url: '../views/about.html',
-        template: '<h3>Its the UI-Router hello world app!</h3>'
+        url: '/about',
+        templateUrl: '../views/about.html'
       }
 
       $stateProvider.state(helloState);
       $stateProvider.state(aboutState);
     });      
+
+    
